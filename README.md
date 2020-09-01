@@ -27,6 +27,10 @@ kubectl apply -f istio.yaml
 查看service
 ```
 kubectl get svc
+NAME         TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE
+kubernetes   ClusterIP   10.96.0.1       <none>        443/TCP    57d
+product      ClusterIP   10.101.176.11   <none>        8080/TCP   5m57s
+store        ClusterIP   10.101.60.102   <none>        8080/TCP   5m57s
 ```
 调用store的接口
 ```
