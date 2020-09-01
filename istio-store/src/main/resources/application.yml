@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: store
+server:
+  port: 8080
+product:
+  name: product
+  url: http://localhost:8080

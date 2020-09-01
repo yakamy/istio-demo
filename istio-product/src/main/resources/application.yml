@@ -1,0 +1,7 @@
+spring:
+  version: 1.0
+  application:
+    name: product
+server:
+  port: 8080
+
