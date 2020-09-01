@@ -15,9 +15,10 @@ mvn package -DskipTests
 # 部署
 准备 k8s 和 istio环境，本文使用的 k8s v1.18.5 / istio 1.7
 
-运行istio
+运行istio,设置自动注入
 ```
 istioctl install --set profile=demo
+kubectl label namespace default istio-injection=enabled
 ```
 
 应用 istio.yaml 资源
